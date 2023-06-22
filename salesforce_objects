@@ -1,0 +1,45 @@
+Sure, I'll provide a high-level overview of some of the main concepts related to Salesforce objects, their customization, and how they compare to traditional relational databases. 
+
+**Salesforce Objects**
+
+In Salesforce, data is stored in objects, similar to how data is stored in tables in a relational database. There are two types of objects in Salesforce: Standard and Custom.
+
+1. **Standard Objects**: These are provided by Salesforce out of the box. Examples include Account, Contact, Opportunity, and Lead.
+
+2. **Custom Objects**: These are created by Salesforce admins or developers to store information unique to the organization. Custom objects come with a unique API name ending with `__c`.
+
+Each object consists of records (rows in a table) and fields (columns in a table). 
+
+**Fields**
+
+Fields in Salesforce are similar to columns in a relational database. There are standard fields that come out of the box with any object and custom fields created to address unique business needs. Custom field API names end with `__c`.
+
+**Relationships**
+
+Salesforce uses relationships to connect objects. These relationships can be compared to joins in SQL:
+
+1. **Lookup Relationship**: Similar to a foreign key constraint in SQL. It links two objects together loosely, and deleting the parent record does not affect the child record.
+
+2. **Master-Detail Relationship**: A tightly coupled relationship. If the parent record is deleted, the child record is also deleted (cascading delete).
+
+3. **Junction Object**: It's used to create many-to-many relationships between objects.
+
+**Customizing Salesforce Objects**
+
+Customizing Salesforce objects involves creating custom fields, relationships, validation rules, and more to address unique business requirements. You can also control the layout of an object, defining how the fields of the object are arranged on the page, and can create custom object-specific actions.
+
+Customization can be done via the Salesforce UI or by using development tools like Salesforce DX.
+
+**Comparison to Relational Databases**
+
+Salesforce is an object-relational database, meaning it provides the advantages of both object-oriented and relational databases.
+
+- Like relational databases, Salesforce stores data in tables (objects), uses relationships to connect tables, and supports powerful query languages (SOQL and SOSL).
+
+- Like object-oriented databases, Salesforce allows encapsulation of fields and methods within an object, inheritance of objects, and polymorphism.
+
+A significant difference between Salesforce and traditional relational databases is the multi-tenant architecture. In Salesforce, multiple customers share the same infrastructure, whereas a traditional relational database usually serves a single customer.
+
+Another difference is the declarative development model offered by Salesforce. While relational databases require a lot of programming to set up a functional application, Salesforce provides a user interface to customize objects, create workflows, set up security, etc., without the need to write code.
+
+While this overview should give you a good foundation of the principles and concepts of Salesforce objects, there's a lot more to Salesforce. For more in-depth knowledge, consider Salesforce's extensive documentation, Trailhead learning platform, or even pursuing a Salesforce certification.
