@@ -1,0 +1,17 @@
+Salesforce, unlike traditional relational databases, uses a model based on Objects and Relationships to manage its data. These Objects are similar to tables in a relational database, and fields in an object could be compared to columns in a table. Relationships between objects are akin to joins in relational databases, and they allow you to access and reference related data.
+
+In your query, `LLC_BI__Connected_To__r.LLC_BI__Status__c` and `LLC_BI__Connected_From__r.LLC_BI__LookupKey__c`, you're referencing related objects and their fields.
+
+Let's break down these expressions:
+
+- `LLC_BI__Connected_To__r` and `LLC_BI__Connected_From__r`: These are relationship fields. The `__r` suffix indicates it is a relationship, allowing you to reference another object (like a foreign key in SQL). `LLC_BI__Connected_To__r` and `LLC_BI__Connected_From__r` are relationships to other objects.
+
+- `LLC_BI__Status__c` and `LLC_BI__LookupKey__c`: These are custom fields on the related object. The `__c` suffix indicates that it's a custom field.
+
+In the context of relational databases, this is equivalent to using a JOIN in SQL to bring in data from a related table. The `__r` field represents the link between the tables (like a foreign key), and the `__c` field is the field you're accessing from the related table.
+
+If these were standard Salesforce objects and fields, their names wouldn't have the `__c` or `LLC_BI__` prefixes. The `LLC_BI__` indicates that these objects and fields are part of a managed package, which is a bundled collection of Salesforce components that are developed and distributed to provide specific functionality.
+
+The `LLC_BI__Connected_To__r` is similar to doing a JOIN in SQL to the related table, and then the `LLC_BI__Status__c` is the specific column in that table that you're selecting.
+
+So to put it all together, these statements are effectively accessing fields on objects that the Connection object is related to through specific relationships. If you were to write this in SQL, you would use JOINs to get to the related tables and then select the specific columns you're interested in.
