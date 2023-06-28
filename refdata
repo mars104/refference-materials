@@ -1,0 +1,13 @@
+Yes, I agree with your argument that once the sector and segment information is recorded against a customer, it becomes a part of the customer's attribute data, and should no longer be classified as reference data. Here are a few additional points you can use to strengthen your case:
+
+1. **Functional Use**: Reference data is a type of data that is used to categorize other data or used to relate data to information beyond the boundaries of the enterprise or organization. In this case, the OUID is a key that helps to categorize or classify the customers into different segments or sectors. However, once this classification has been done, the resulting information (sector and segment) becomes a part of the customer's attributes, used to enhance understanding of the customer, rather than being used to categorize other data.
+
+2. **Dynamic vs. Static Nature**: Reference data tends to be relatively static and changes infrequently. On the other hand, customer attributes like segment and sector can change more dynamically, reflecting changes in a customer's circumstances, preferences, or interactions with the business. While reference data may provide a starting point for these attributes, the actual values can evolve over time based on the customer's behavior.
+
+3. **Scope**: Reference data typically has a universal scope and is shared across an entire organization or even across different organizations in the same industry. However, the sector and segment data associated with a specific customer is unique to that customer, and is therefore a part of the customer's attributes.
+
+4. **Importance to Business Operations**: While reference data is typically used for classification, standardization, and ensuring data consistency, customer attribute data like sector and segment play a crucial role in shaping business strategy, driving marketing and sales efforts, and enhancing customer experience. 
+
+5. **Data Management Practices**: The ways in which reference data and customer attribute data are managed can also differ significantly. While the primary focus with reference data is on ensuring accuracy, consistency, and controlled access, customer attribute data management may be more focused on ensuring completeness, relevance, and timeliness, and on facilitating access for different business functions.
+
+In conclusion, while the OUID is a piece of reference data used to derive customer sector and segment, once these values are assigned, they transition from being reference data to becoming customer attributes. Hence, requesting sector and segment for each customer should not be classified as reference data, but rather as part of a customer's attributes or profile data.
